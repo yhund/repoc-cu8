@@ -1,0 +1,95 @@
+.form-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 540px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.form-component h2 {
+  width: 100%;
+  margin: 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 52px;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.form-component form {
+  width: 100%;
+}
+
+.form-component textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.input {
+  display: block;
+  padding: 20px 25px;
+  outline: none;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.form-error {
+  margin: 0;
+  padding: 8px;
+  font-weight: 600;
+  background-color: #ff6b6b;
+  border-bottom: 8px solid #000;
+  border-right: 4px solid #000;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: auto;
+  padding: 12px 40px;
+  max-width: 240px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  background-color: #c5a1ff;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  box-shadow: 10px 5px 5px #000;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #91ed91;
+}
+
+.submit-button:disabled {
+  background-color: #e3dff2;
+  cursor: not-allowed;
+}
+
+.submit-message {
+  position: absolute;
+  top: 50px;
+  z-index: 5;
+  right: -360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 100px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background-color: #91ed91;
+  border: 6px solid #000;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}

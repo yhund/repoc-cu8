@@ -120,6 +120,7 @@ const Form = () => {
           className="input"
           placeholder="Message"
           required
+          aria-label="textarea"
         />
         {isMessageFieldEmpty ? (
           <p className="form-error">This field is required!</p>
@@ -132,12 +133,14 @@ const Form = () => {
           disabled={isButtonDisabled}
           className="submit-button"
           type="submit"
+          aria-label="submit-button"
         >
           Submit
         </button>
       </form>
 
       <div
+        aria-label="submit-message"
         className="submit-message"
         style={{
           right: isSubmitted ? 0 : "-360px",

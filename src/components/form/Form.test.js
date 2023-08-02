@@ -119,11 +119,7 @@ describe("form component", () => {
   });
 
   test("shoud show errors for each input fiels on focus and then blur", () => {
-    render(
-      <Provider store={store}>
-        <Form />
-      </Provider>
-    );
+    renderFormProvider();
 
     const firstName = screen.getByLabelText("first-name");
     const lastName = screen.getByLabelText("last-name");
